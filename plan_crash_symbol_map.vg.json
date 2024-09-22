@@ -5,6 +5,34 @@
     "title": "Fatal Plane Crashes Between 1908 and 2018",
     "projection": {"type": "equalEarth"},
     "layer": [
+     
+      
+      {
+        "data": {
+          "graticule": true
+        },
+        "mark": {
+          "type": "geoshape",
+          "stroke": "lightgray"
+        },
+        "projection": {
+          "type": "equalEarth"
+        }
+        
+      },
+      {
+        "data": {
+          "graticule": true
+        },
+        "mark": {
+          "type": "rect",
+          "stroke": "lightblue"
+        },
+        "projection": {
+          "type": "equalEarth"
+        }
+        
+      },
       {
         "data": {
           "url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/ne_110m-topoJsonFile.json",
@@ -37,5 +65,6 @@
           }]
         }
       }
+      
     ]
   }
