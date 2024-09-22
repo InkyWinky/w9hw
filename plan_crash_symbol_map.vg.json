@@ -6,7 +6,20 @@
     "projection": {"type": "equalEarth"},
     "layer": [
      
-      
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/ne_10m_ocean.json",
+          "format": {"type": "topojson", "feature": "ne_10m_ocean"}
+        },
+        "mark": {
+          "type": "geoshape",
+          "fill": "#ebf5ff"
+        },
+        "projection": {
+          "type": "equalEarth"
+        }
+        
+      },
       {
         "data": {
           "graticule": true
@@ -20,19 +33,7 @@
         }
         
       },
-      {
-        "data": {
-          "graticule": true
-        },
-        "mark": {
-          "type": "rect",
-          "stroke": "lightblue"
-        },
-        "projection": {
-          "type": "equalEarth"
-        }
-        
-      },
+    
       {
         "data": {
           "url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/ne_110m-topoJsonFile.json",
