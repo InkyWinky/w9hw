@@ -14,23 +14,17 @@
       },
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/data/earthquake.csv"
+          "url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/geocoded_locations_new.csv"
         },
         "mark": {"type": "circle", "tooltip": {"content": "data"}},
         "encoding": {
-          "longitude": {"field": "longitude", "type": "quantitative"},
-          "latitude": {"field": "latitude", "type": "quantitative"},
+          "longitude": {"field": "Longitude", "type": "quantitative"},
+          "latitude": {"field": "Latitude", "type": "quantitative"},
           "size": {
-            "field": "mag",
+            "field": "year",
             "type": "quantitative",
             "title": "Magnitude (Richter scale)",
             "scale": {"domain": [4, 8]}
-          },
-          "color": {
-            "field": "depth",
-            "type": "quantitative",
-            "title": "Depth in km",
-            "scale": {"scheme": "reds"}
           }
         }
       }
