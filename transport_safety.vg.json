@@ -33,7 +33,7 @@
         "type": "nominal",
         "scale": {
           "domain": ["Aviation", "Road", "Rail", "Marine"],
-          "range": ["dodgerblue", "lightgray", "lightgray", "lightgray"] 
+          "range": ["#4c78a7", "lightgray", "lightgray", "lightgray"] 
         },
         "legend": null  
       }
