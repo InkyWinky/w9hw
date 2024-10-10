@@ -27,6 +27,15 @@
         "field": "fatalities",
         "type": "quantitative",
         "axis": {"title": "Fatalities"}
+      },
+      "color": {
+        "field": "transport",
+        "type": "nominal",
+        "scale": {
+          "domain": ["Aviation", "Road", "Rail", "Marine"],
+          "range": ["dodgerblue", "lightgray", "lightgray", "lightgray"] 
+        },
+        "legend": null  
       }
     },
     "config": {
