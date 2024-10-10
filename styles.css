@@ -1,0 +1,51 @@
+html, body{
+ 
+    height:100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1ede4;
+}
+p{
+    color: rgb(30, 30, 30);
+    font-size: 1em;;
+}
+.centred{
+    text-align: center;
+}
+.vis-container {
+    background-color: #f1ede4;
+    display: grid;
+    /* 1 column 800px wide */
+    grid-template-columns: 1100px;  
+    /* 1 row  for title and */
+    /* 3 rows for content 500px tall */
+    grid-template-rows: 200px 500px 500px 500px;
+    /* 10px gap between grid items */
+    gap: 10px;
+}
+
+#mayday-title{
+    font-family:"Saira Stencil One", sans-serif;
+    font-size: 4.5em;
+    font-weight: normal;
+    color: #324e66;
+    margin-bottom: 0;
+}
+.subtitle{
+    font-family: "Roboto", sans-serif;
+    margin-top: -10px;
+    font-size: 1.5em;
+    color: #5f7b93;
+}
+.two-columns{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 10px;
+}
+.emphasis{
+    color: #5f7b93;
+    font-weight: bold;
+}

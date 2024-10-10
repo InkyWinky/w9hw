@@ -1,0 +1,34 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Bar chart showing fatalities of road, rail, marine, and aviation transport.",
+    "data": {
+      "values": [
+        {"transport": "Road", "fatalities": 2000},
+        {"transport": "Rail", "fatalities": 150},
+        {"transport": "Marine", "fatalities": 300},
+        {"transport": "Aviation", "fatalities": 50}
+      ]
+    },
+    "mark": {
+      "type": "bar",
+      "tooltip": true
+    },
+    "encoding": {
+      "x": {
+        "field": "transport",
+        "type": "nominal",
+        "axis": {"title": "Transport Type"}
+      },
+      "y": {
+        "field": "fatalities",
+        "type": "quantitative",
+        "axis": {"title": "Fatalities"}
+      }
+    },
+    "config": {
+      "background": null,
+      "axis": {
+        "grid": false
+      }
+    }
+  }
