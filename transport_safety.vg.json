@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Bar chart showing fatalities of road, rail, marine, and aviation transport.",
-    "width":500,
+    "width":400,
     "data": {
       "values": [
         {"transport": "Road", "fatalities": 2000},

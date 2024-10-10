@@ -43,7 +43,7 @@ p{
 .two-columns{
     display: grid;
     grid-template-columns: 2fr 3fr;
-    gap: 10px;
+    gap: 20px;
 }
 .emphasis{
     color: #5f7b93;
