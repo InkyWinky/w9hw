@@ -1,71 +1,48 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 500,
-    "height": 450,
-    "title": "Fatal Plane Crashes Between 1908 and 2018",
-    "projection": {"type": "equalEarth"},
-    "layer": [
-     
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/ne_10m_ocean.json",
-          "format": {"type": "topojson", "feature": "ne_10m_ocean"}
-        },
-        "mark": {
-          "type": "geoshape",
-          "fill": "#ebf5ff"
-        },
-        "projection": {
-          "type": "equalEarth"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/australia.json",
+        "format": {
+          "type": "topojson",
+          "feature": "ne_110m_admin_0_countries1"
         }
-        
       },
-      {
-        "data": {
-          "graticule": true
-        },
-        "mark": {
-          "type": "geoshape",
-          "stroke": "lightgray"
-        },
-        "projection": {
-          "type": "equalEarth"
-        }
-        
+      "projection": {
+        "type": "equalEarth"
       },
-    
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/australia.json",
-          "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
-        },
-        "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
-      },
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/geocoded_locations_new.csv"
-        },
-        "mark": {"type": "circle"},
-        "encoding": {
-          "longitude": {"field": "Longitude", "type": "quantitative"},
-          "latitude": {"field": "Latitude", "type": "quantitative"},
-          "size": {
-            "field": "fatalityQty",
-            "type": "quantitative",
-            "title": "Number of Fatalities",
-            "scale": {"domain": [0, 300]}
-          },
-          "tooltip":[{
-            "field": "Locations", "title": "Location",
-            "type": "nominal"
-        
-          },
-          {
-            "field": "fatalities", "title": "Fatalities",
-            "type": "nominal"
-          }]
-        }
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgray",
+        "stroke": "white"
       }
-      
-    ]
-  }
+    },
+    {
+      "projection": {
+        "type": "albersUsa"
+      },
+      "mark": {
+        "type": "image",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/United_Airlines_Boeing_777-200_Meulemans.jpg/220px-United_Airlines_Boeing_777-200_Meulemans.jpg",
+            "width": 30,
+            "height": 30
+
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "size": {"value": 10},
+        "color": {"value": "steelblue"}
+      }
+    }
+  ]
+}
