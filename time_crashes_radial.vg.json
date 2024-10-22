@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple radial chart with embedded data.",
+  "width": 400,
+  "title": "Time of the day that fatal plane crashes occur",
   "data": {
     "values": [
       {"time": 0, "number": 131, "highlight": "false", "theta": 1.3},
@@ -40,6 +42,10 @@
             "field": "number", "title": "Number of crashes",
             "type": "nominal"
           }]
-  }
+  },
+  "config": {
+        "background": null,
+        "view":{ "stroke": "transparent" }
+      }
   
 }

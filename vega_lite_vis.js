@@ -10,3 +10,6 @@ vegaEmbed("#aus_crash_map", vg_3).then(function(result) {
 var vg_4 = "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/crash_years_line.vg.json";
 vegaEmbed("#crashes_per_year_line", vg_4).then(function(result) {
 }).catch(console.error);
+var vg_5 = "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/time_crashes_radial.vg.json";
+vegaEmbed("#time_crashes_radial", vg_5).then(function(result) {
+}).catch(console.error);

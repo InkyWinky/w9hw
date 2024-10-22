@@ -6,7 +6,7 @@
     "mark": {
       "type":"line",
       "tooltip": true,
-      "color": "#324e66"
+      "color": "#5f7b93"
     },
     "encoding": {
       "x": {"field": "year", "type": "temporal"},
