@@ -69,6 +69,7 @@
       
     ],
     "config": {
-        "background": null
+        "background": null,
+        "view":{ "stroke": "transparent" }
       }
   }
