@@ -49,3 +49,9 @@ p{
     color: #5f7b93;
     font-weight: bold;
 }
+#transport_safety_bar{
+    width: 100%;
+}
+#bar_container{
+    width: 100%;
+}
