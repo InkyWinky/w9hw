@@ -44,7 +44,12 @@
           "field": "Latitude",
           "type": "quantitative"
         },
-        "size": {"value": 10},
+        "size": {
+            "field": "fatalityQty",
+            "type": "quantitative",
+            "title": "Number of Fatalities",
+            "scale": {"range": [500, 4000]}
+          },
         "color": {"value": "steelblue"},
         "tooltip":[{
             "field": "Locations", "title": "Location",
@@ -60,6 +65,7 @@
     }
   ],
   "config": {
-        "background": null
+        "background": null,
+        "view":{ "stroke": "transparent" }
       }
 }
