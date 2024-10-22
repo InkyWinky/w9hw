@@ -23,7 +23,7 @@
 
     {
       "data": {
-        "url": ""
+        "url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/geocoded_locations_new_aus_only.csv"
       },
       "projection": {
         "type": "mercator"
@@ -33,15 +33,14 @@
             "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/United_Airlines_Boeing_777-200_Meulemans.jpg/220px-United_Airlines_Boeing_777-200_Meulemans.jpg",
             "width": 30,
             "height": 30
-
       },
       "encoding": {
         "longitude": {
-          "field": "longitude",
+          "field": "Longitude",
           "type": "quantitative"
         },
         "latitude": {
-          "field": "latitude",
+          "field": "Latitude",
           "type": "quantitative"
         },
         "size": {"value": 10},
