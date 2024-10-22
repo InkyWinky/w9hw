@@ -31,8 +31,9 @@
       "mark": {
         "type": "image",
             "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/United_Airlines_Boeing_777-200_Meulemans.jpg/220px-United_Airlines_Boeing_777-200_Meulemans.jpg",
-            "width": 30,
-            "height": 30
+            "width": 10,
+            "height": 10,
+            "tooltip": true
       },
       "encoding": {
         "longitude": {
