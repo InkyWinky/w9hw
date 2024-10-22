@@ -19,7 +19,7 @@ p{
     background-color: #f1ede4;
     display: grid;
     /* 1 column 800px wide */
-    grid-template-columns: 900px;  
+    grid-template-columns: 1000px;  
     /* 1 row  for title and */
     /* 3 rows for content 500px tall */
     grid-template-rows: 200px 500px 500px 500px;

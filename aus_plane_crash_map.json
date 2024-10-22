@@ -5,14 +5,14 @@
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/australia.json",
+        "url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/au-states-topo.json",
         "format": {
           "type": "topojson",
-          "feature": "ne_110m_admin_0_countries1"
+          "feature": "austates"
         }
       },
       "projection": {
-        "type": "equalEarth"
+        "type": "mercator"
       },
       "mark": {
         "type": "geoshape",
