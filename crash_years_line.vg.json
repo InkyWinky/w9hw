@@ -1,0 +1,22 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "title": "Fatal plane crashes in Australia over time",
+    "data": {"url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/geocoded_locations_new_aus_only.csv"},
+    "mark": {
+      "type":"line",
+      "tooltip": true
+    },
+    "encoding": {
+      "x": {"field": "year", "type": "temporal"},
+      "y": {"aggregate": "count", "type": "quantitative", "title": "Number of fatal crashes"}
+    },
+    "config": {
+        "background": null,
+        "view":{ "stroke": "transparent" },
+        "axis": {
+          "grid": false  
+        }
+      }
+  }
+  
