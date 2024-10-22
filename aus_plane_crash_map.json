@@ -30,9 +30,9 @@
       },
       "mark": {
         "type": "image",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/United_Airlines_Boeing_777-200_Meulemans.jpg/220px-United_Airlines_Boeing_777-200_Meulemans.jpg",
-            "width": 10,
-            "height": 10,
+            "url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/airplane-icon.png",
+            "width": 15,
+            "height": 15,
             "tooltip": true
       },
       "encoding": {
@@ -45,7 +45,21 @@
           "type": "quantitative"
         },
         "size": {"value": 10},
-        "color": {"value": "steelblue"}
+        "color": {"value": "steelblue"},
+        "tooltip":[{
+            "field": "Locations", "title": "Location",
+            "type": "nominal"
+        
+          },
+          {
+            "field": "fatalities", "title": "Fatalities",
+            "type": "nominal"
+          }]
+      },
+      "config": {
+      "background": null,
+      "axis": {
+        "grid": false  
       }
     }
   ]
