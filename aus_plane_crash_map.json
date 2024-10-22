@@ -17,7 +17,7 @@
       "mark": {
         "type": "geoshape",
         "fill": "lightgray",
-        "stroke": "white"
+        "stroke": "#f1ede4"
       }
     },
 
@@ -57,9 +57,7 @@
           }]
       },
       "config": {
-      "background": null,
-      "axis": {
-        "grid": false  
+        "background": null
       }
     }
   ]
