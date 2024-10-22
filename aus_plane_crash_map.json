@@ -55,10 +55,11 @@
             "field": "fatalities", "title": "Fatalities",
             "type": "nominal"
           }]
-      },
-      "config": {
+      }
+      
+    }
+  ],
+  "config": {
         "background": null
       }
-    }
-  ]
 }

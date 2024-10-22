@@ -67,5 +67,8 @@
         }
       }
       
-    ]
+    ],
+    "config": {
+        "background": null
+      }
   }
