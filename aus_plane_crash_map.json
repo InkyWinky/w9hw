@@ -20,9 +20,13 @@
         "stroke": "white"
       }
     },
+
     {
+      "data": {
+        "url": ""
+      },
       "projection": {
-        "type": "albersUsa"
+        "type": "mercator"
       },
       "mark": {
         "type": "image",
