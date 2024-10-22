@@ -19,7 +19,7 @@ p{
     background-color: #f1ede4;
     display: grid;
     /* 1 column 800px wide */
-    grid-template-columns: 1100px;  
+    grid-template-columns: 900px;  
     /* 1 row  for title and */
     /* 3 rows for content 500px tall */
     grid-template-rows: 200px 500px 500px 500px;
@@ -29,7 +29,7 @@ p{
 
 #mayday-title{
     font-family:"Saira Stencil One", sans-serif;
-    font-size: 4.5em;
+    font-size: 4.8em;
     font-weight: normal;
     color: #324e66;
     margin-bottom: 0;
@@ -37,7 +37,13 @@ p{
 .subtitle{
     font-family: "Roboto", sans-serif;
     margin-top: -10px;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    color: #5f7b93;
+}
+.heading{
+    font-family: "Roboto", sans-serif;
+    margin-top: -10px;
+    font-size: 1.2em;
     color: #5f7b93;
 }
 .two-columns{
