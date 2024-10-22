@@ -22,7 +22,7 @@ p{
     grid-template-columns: 1000px;  
     /* 1 row  for title and */
     /* 3 rows for content 500px tall */
-    grid-template-rows: 200px 500px 500px 500px;
+    grid-template-rows: 200px 370px 500px 500px;
     /* 10px gap between grid items */
     gap: 10px;
 }
@@ -43,7 +43,7 @@ p{
 .heading{
     font-family: "Roboto", sans-serif;
     margin-top: -10px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #5f7b93;
 }
 .two-columns{
@@ -60,4 +60,7 @@ p{
 }
 #bar_container{
     width: 100%;
+}
+#aus_crash_map{
+    margin-left:-90px;
 }
