@@ -83,3 +83,6 @@ p{
 .row-icon{
     width: 150px;
 }
+.vega-tooltip {
+    text-align: left !important; /* Force text to be aligned to the left */
+  }

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple radial chart with embedded data.",
+  "data": {
+    "values": [
+      {"time": 0, "number": 131, "highlight": "false", "theta": 1.3},
+      {"time": 2, "number": 132, "highlight": "false", "theta": 1.3},
+      {"time": 4, "number": 130, "highlight": "false", "theta": 1.3},
+      {"time": 6, "number": 231, "highlight": "false", "theta": 2.3},
+      {"time": 8, "number": 290, "highlight": "false", "theta": 2.9},
+      {"time": 10, "number": 180, "highlight": "false", "theta": 1.8},
+      {"time": 12, "number": 341, "highlight": "true", "theta": 3.4},
+      {"time": 14, "number": 323, "highlight": "false", "theta": 3.2},
+      {"time": 16, "number": 336, "highlight": "false", "theta": 3.3},
+      {"time": 18, "number": 309, "highlight": "false", "theta": 3},
+      {"time": 20, "number": 323, "highlight": "false", "theta": 3.2},
+      {"time": 22, "number": 262, "highlight": "false", "theta": 2.6}
+    ]
+  },
+  "layer": [{
+    "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff","tooltip": true}
+  },{
+    "mark": {"type": "text", "radiusOffset": 10},
+    "encoding": {
+      "text": {"field":"time", "type": "ordinal"}
+    }
+  }],
+  "encoding": {
+    "theta": {"field": "theta", "type": "quantitative", "stack": true},
+    "radius": {"field": "theta", "type": "quantitative", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
+    "color": {"field": "highlight", "legend": null, "scale":{
+      "range":["lightgray", "#4c78a7"]
+    }},
+     "tooltip":[{
+            "field": "time", "title": "Time (24hr)",
+            "type": "ordinal"
+            
+          },
+          {
+            "field": "number", "title": "Number of crashes",
+            "type": "nominal"
+          }]
+  }
+  
+}
