@@ -13,3 +13,9 @@ vegaEmbed("#crashes_per_year_line", vg_4).then(function(result) {
 var vg_5 = "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/time_crashes_radial.vg.json";
 vegaEmbed("#time_crashes_radial", vg_5,{"actions": false}).then(function(result) {
 }).catch(console.error);
+
+// Add an event listener to the button to trigger the filter
+document.getElementById("bullet-button").addEventListener("click", () => {
+    // Toggle the filter based on whether 'reason' contains 'crashed'
+    view.signal("causeFilter", true).run();
+  });
