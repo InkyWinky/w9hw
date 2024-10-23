@@ -2,12 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 600,
   "height": 450,
-  "transform": [
-    {
-    
-      "filter": "causeFilter == false || causeFilter && test(datum.Summary, /crashed/i)"
-    }
-  ],
   "layer": [
     {
       "data": {
@@ -66,13 +60,7 @@
             "field": "fatalities", "title": "Fatalities",
             "type": "nominal"
           }]
-      },
-      "signals": [
-    {
-      "name": "causeFilter",
-      "value": false 
-    }
-  ]
+      }
       
     }
   ],

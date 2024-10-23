@@ -15,7 +15,8 @@ vegaEmbed("#time_crashes_radial", vg_5,{"actions": false}).then(function(result)
 }).catch(console.error);
 
 // Add an event listener to the button to trigger the filter
-document.getElementById("bullet-button").addEventListener("click", () => {
+document.getElementById("crashed-button").addEventListener("click", () => {
     // Toggle the filter based on whether 'reason' contains 'crashed'
+    console.log("clicked");
     view.signal("causeFilter", true).run();
   });
