@@ -22,7 +22,7 @@ p{
     grid-template-columns: 1000px;  
     /* 1 row  for title and */
     /* 3 rows for content 500px tall */
-    grid-template-rows: 200px 310px 500px 500px 500px;
+    grid-template-rows: 200px 300px 480px 500px 500px;
     /* 10px gap between grid items */
     gap: 10px;
 }
