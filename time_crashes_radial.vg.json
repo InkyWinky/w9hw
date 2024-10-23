@@ -38,7 +38,7 @@
       },
       {
         "test": "datum.highlight == 'max'",  
-        "value": "#4c78a7"
+        "value": "#5f7b93"
       }],
       "value": "lightgray"
     },
