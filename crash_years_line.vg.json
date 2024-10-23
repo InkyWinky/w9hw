@@ -18,7 +18,7 @@
     }
   }, {
     "title": "Overall View",
-    "width": 480,
+    "width": 420,
     "height": 60,
     "mark": "area",
     "params": [{

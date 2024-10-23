@@ -22,7 +22,7 @@ p{
     grid-template-columns: 1000px;  
     /* 1 row  for title and */
     /* 3 rows for content 500px tall */
-    grid-template-rows: 200px 300px 480px 500px 500px;
+    grid-template-rows: 200px 300px 480px 650px 500px;
     /* 10px gap between grid items */
     gap: 10px;
 }
@@ -96,8 +96,13 @@ display: flex;
 }
 #ww2-spiel{
     padding-left: 40px;
-    padding-right: 30px;
+    padding-right: 10px;
 }
 #radial-paragraph{
     padding-right: 30px;
+}
+.col-2-3{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
 }
