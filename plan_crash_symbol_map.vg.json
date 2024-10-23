@@ -20,21 +20,7 @@
         }
         
       },
-        {
-       "data": {
-        "values": [
-          {"lat": 25.789106, "lon": -80.226529},  
-          {"lat": 18.4663188, "lon": -66.1057427},  
-          {"lat": 32.294887, "lon": -64.781380},  
-          {"lat": 25.789106, "lon": -80.226529} 
-        ]
-      },
-      "mark": {"type": "line", "color": "blue", "strokeWidth": 2},
-      "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"}
-      }
-    },
+
       {
         "data": {
           "graticule": true
