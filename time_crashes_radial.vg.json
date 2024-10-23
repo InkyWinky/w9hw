@@ -41,18 +41,17 @@
         "value": "#4c78a7"
       }],
       "value": "lightgray"
-    }
+    },
+    "tooltip":[{
+          "field": "time", "title": "Time (24hr)",
+          "type": "ordinal"
+        },
+        {
+          "field": "number", "title": "Number of crashes",
+          "type": "nominal"
+        }]
   },
-   
-     "tooltip":[{
-            "field": "time", "title": "Time (24hr)",
-            "type": "ordinal"
-            
-          },
-          {
-            "field": "number", "title": "Number of crashes",
-            "type": "nominal"
-          }],
+    
   "config": {
         "background": null,
         "view":{ "stroke": "transparent" }

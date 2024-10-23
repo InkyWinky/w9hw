@@ -1,23 +1,39 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 400,
-    "title": "Fatal plane crashes in Australia over time",
-    "data": {"url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/geocoded_locations_new_aus_only.csv"},
-    "mark": {
-      "type":"line",
-      "tooltip": true,
-      "color": "#5f7b93"
-    },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/geocoded_locations_new_aus_only.csv"},
+  "title":"Number of Fatal Plane Crashes Over the Years",
+  "vconcat": [{
+    "width": 480,
+    "mark": {"type":"area",
+    "color": "#4c78a7" },
+    "title": "Focus View",
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "temporal",
+        "scale": {"domain": {"param": "brush"}},
+        "axis": {"title": ""}
+      },
+      "y": {"aggregate": "count", "type": "quantitative", "title": "Number of fatal crashes"}
+    }
+  }, {
+    "title": "Overall View",
+    "width": 480,
+    "height": 60,
+    "mark": "area",
+    "params": [{
+      "name": "brush",
+      "select": {"type": "interval", "encodings": ["x"]}
+    }],
     "encoding": {
       "x": {"field": "year", "type": "temporal"},
       "y": {"aggregate": "count", "type": "quantitative", "title": "Number of fatal crashes"}
-    },
-    "config": {
-        "background": null,
-        "view":{ "stroke": "transparent" },
-        "axis": {
-          "grid": false  
-        }
+    }
+  }],
+  "config": {
+      "background": null,
+      "axis": {
+        "grid": false  
       }
-  }
-  
+    }
+}

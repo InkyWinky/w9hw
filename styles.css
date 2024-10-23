@@ -86,3 +86,11 @@ p{
 .vega-tooltip {
     text-align: left !important; /* Force text to be aligned to the left */
   }
+.hover-animation:hover {
+    /* increase size on hover */
+    transform: scale(1.2)
+  }
+#radial-graph-container{
+display: flex;
+  justify-content: center;  /* Centers the inner div horizontally */  
+}

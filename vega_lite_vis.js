@@ -11,5 +11,5 @@ var vg_4 = "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/cra
 vegaEmbed("#crashes_per_year_line", vg_4).then(function(result) {
 }).catch(console.error);
 var vg_5 = "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/time_crashes_radial.vg.json";
-vegaEmbed("#time_crashes_radial", vg_5).then(function(result) {
+vegaEmbed("#time_crashes_radial", vg_5,{"actions": false}).then(function(result) {
 }).catch(console.error);
