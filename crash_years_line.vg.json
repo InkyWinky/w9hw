@@ -3,7 +3,7 @@
   "data": {"url": "https://raw.githubusercontent.com/InkyWinky/w9hw/refs/heads/main/geocoded_locations_new_aus_only.csv"},
   "title":"Number of Fatal Plane Crashes Over the Years",
   "vconcat": [{
-    "width": 460,
+    "width": 420,
     "mark": {"type":"area",
     "color": "#4c78a7" },
     "title": "Focus View",
