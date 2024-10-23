@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple radial chart with embedded data.",
-  "width": 400,
-  "height": 400,
+  "width": 300,
+  "height": 300,
   "title": "Time of the day that fatal plane crashes occur",
   "data": {
     "values": [
