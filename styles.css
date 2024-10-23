@@ -94,3 +94,7 @@ p{
 display: flex;
   justify-content: center;  /* Centers the inner div horizontally */  
 }
+#ww2-spiel{
+    padding-left: 32px;
+    padding-right: 20px;
+}
